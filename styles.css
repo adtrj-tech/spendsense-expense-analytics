@@ -1,0 +1,248 @@
+
+/* SpendSense — visual design system */
+
+:root {
+    --page-bg: #F6F7FB;
+    --surface: #FFFFFF;
+    --text-primary: #19213A;
+    --text-secondary: #69738B;
+    --accent: #7057E8;
+    --accent-light: #F0EDFF;
+    --border: #E6E9F2;
+    --success: #16794A;
+}
+
+/* Main application */
+.stApp,
+[data-testid="stAppViewContainer"] {
+    background: var(--page-bg) !important;
+    color: var(--text-primary) !important;
+}
+
+[data-testid="stHeader"] {
+    background: rgba(246, 247, 251, 0.96) !important;
+}
+
+.block-container {
+    max-width: 1480px;
+    padding: 2rem 2.5rem 3rem;
+}
+
+/* Fix low-contrast headings and body text */
+[data-testid="stAppViewContainer"] h1,
+[data-testid="stAppViewContainer"] h2,
+[data-testid="stAppViewContainer"] h3,
+[data-testid="stAppViewContainer"] h4,
+[data-testid="stAppViewContainer"] p,
+[data-testid="stAppViewContainer"] label,
+[data-testid="stAppViewContainer"] li {
+    color: var(--text-primary) !important;
+}
+
+[data-testid="stAppViewContainer"] p {
+    line-height: 1.65;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background: var(--surface) !important;
+    border-right: 1px solid var(--border);
+}
+
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"],
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] span {
+    color: var(--text-primary) !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p {
+    line-height: 1.5;
+}
+
+[data-testid="stSidebar"] hr {
+    border-color: var(--border);
+}
+
+/* Header branding */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-weight: 750;
+    letter-spacing: -0.5px;
+}
+
+.brand-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    background: var(--accent-light);
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+
+
+.eyebrow {
+    color: #7057E8 !important;
+    opacity: 1 !important;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+.page-subtitle {
+    color: var(--text-secondary) !important;
+    font-size: 1rem;
+    margin-top: -6px;
+    margin-bottom: 22px;
+}
+
+/* Metric cards */
+[data-testid="stMetric"] {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 22px;
+    box-shadow: 0 4px 16px rgba(29, 38, 75, 0.035);
+    min-height: 125px;
+}
+
+[data-testid="stMetricLabel"],
+[data-testid="stMetricLabel"] p {
+    color: var(--text-secondary) !important;
+    font-size: 0.85rem !important;
+}
+
+[data-testid="stMetricValue"],
+[data-testid="stMetricValue"] div {
+    color: var(--text-primary) !important;
+    font-weight: 700;
+}
+
+/* Buttons */
+.stButton > button,
+.stDownloadButton > button {
+    border-radius: 10px;
+    min-height: 42px;
+    font-weight: 600;
+    transition: border-color 0.15s ease;
+}
+
+.stButton > button[kind="primary"] {
+    background: var(--accent);
+    color: #FFFFFF !important;
+    border: 1px solid var(--accent);
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+    border-color: var(--accent);
+    color: var(--accent) !important;
+}
+
+/* Inputs */
+[data-testid="stFileUploader"],
+[data-testid="stSelectbox"],
+[data-testid="stMultiSelect"],
+[data-testid="stDateInput"] {
+    border-radius: 12px;
+}
+
+[data-testid="stFileUploader"] section {
+    background: #FFFFFF;
+    border-color: var(--border);
+}
+
+/* Panel headings */
+.section-heading {
+    color: var(--text-primary) !important;
+    font-size: 1.12rem;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    margin-bottom: 4px;
+}
+
+.section-caption {
+    color: var(--text-secondary) !important;
+    font-size: 0.85rem;
+    margin-bottom: 14px;
+}
+
+/* Charts and tables */
+[data-testid="stPlotlyChart"] {
+    background: #FFFFFF;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 10px;
+}
+
+[data-testid="stDataFrame"] {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Status messages */
+[data-testid="stAlert"] {
+    border-radius: 12px;
+}
+
+/* Footer */
+.app-footer {
+    border-top: 1px solid var(--border);
+    margin-top: 36px;
+    padding-top: 18px;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+}
+
+/* Smaller screens */
+@media (max-width: 768px) {
+    .block-container {
+        padding: 1.25rem 1rem 2rem;
+    }
+
+    [data-testid="stMetric"] {
+        padding: 14px;
+        min-height: 100px;
+    }
+}
+
+
+/* Improve chart panel sizing */
+[data-testid="stPlotlyChart"] {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    background: #FFFFFF;
+    border: 1px solid #E6E9F2;
+    border-radius: 16px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Prevent chart columns from forcing overflow */
+[data-testid="stHorizontalBlock"] {
+    min-width: 0;
+}
+
+[data-testid="stHorizontalBlock"] > div {
+    min-width: 0;
+}
+
+/* Keep supporting text readable */
+.section-caption,
+.page-subtitle {
+    color: #69738B !important;
+    opacity: 1 !important;
+}

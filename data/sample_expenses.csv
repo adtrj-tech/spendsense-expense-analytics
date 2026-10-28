@@ -1,0 +1,21 @@
+date,description,category,amount,payment_method
+2026-10-01,Supermarket groceries,Food,1250,UPI
+2026-10-02,Bus ticket,Transport,80,UPI
+2026-10-03,Monthly internet bill,Bills,799,UPI
+2026-10-04,Coffee shop,Food,220,Card
+2026-10-05,Movie ticket,Entertainment,350,Card
+2026-10-06,Fuel,Transport,1500,Card
+2026-10-07,Online course,Education,999,UPI
+2026-10-08,Restaurant dinner,Food,850,UPI
+2026-10-09,Mobile recharge,Bills,299,UPI
+2026-10-10,Pharmacy,Healthcare,420,UPI
+2026-10-11,Clothing,Shopping,1800,Card
+2026-10-12,Auto fare,Transport,160,Cash
+2026-10-13,Streaming subscription,Entertainment,149,Card
+2026-10-14,Vegetables,Food,280,Cash
+2026-10-15,Electricity bill,Bills,1350,UPI
+2026-10-16,Book purchase,Education,450,UPI
+2026-10-17,Restaurant lunch,Food,550,UPI
+2026-10-18,Petrol,Transport,1200,Card
+2026-10-19,Household supplies,Shopping,680,UPI
+2026-10-20,Medical consultation,Healthcare,600,UPI
